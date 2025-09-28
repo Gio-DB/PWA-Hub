@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA-Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .hub-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .hub-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .hub-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .hub-item span {
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mein PWA-Hub</h1>
+
+  <div class="hub-grid">
+    <a class="hub-item" href="https://gio-db.github.io/minimal-pwa/" target="_blank">
+      <img src="/icons/grammar.png" alt="Grammatik Icon">
+      <span>Grammatik</span>
+    </a>
+
+    <a class="hub-item" href="https://meine-granaten-tipps.de" target="_blank">
+      <img src="/icons/granaten.png" alt="Granaten & Tipps Icon">
+      <span>Granaten & Tipps</span>
+    </a>
+
+    <a class="hub-item" href="https://mein-blog.de" target="_blank">
+      <img src="/icons/blog.png" alt="Blog Icon">
+      <span>Mein Blog</span>
+    </a>
+  </div>
+</body>
+</html>
