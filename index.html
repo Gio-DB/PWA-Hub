@@ -2,8 +2,15 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PWA-Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PWA.Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome für das Dropdown-Symbol -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- PWA Optimierungen: Manifest und Theme Color -->
+  <meta name="theme-color" content="#317EFB">
+  <link rel="manifest" href="manifest.json">
   <style>
     body {
       margin: 0;
@@ -59,23 +66,32 @@
   </style>
 </head>
 <body>
-  <h1>Mein PWA-Hub</h1>
+  <!-- Hauptinhalt -->
+  <main>
+    <h1>Mein PWA-Hub</h1>
+    <!-- Spacing -->
+    <div class="spacing"></div>
 
-  <div class="hub-grid">
-    <a class="hub-item" href="https://gio-db.github.io/minimal-pwa/" target="_blank">
-      <img src="/icons/grammar.png" alt="Grammatik Icon">
-      <span>Grammatik</span>
-    </a>
+    <!-- Hubs -->
+    <div class="hub-grid">
+      <a class="hub-item" href="https://gio-db.github.io/minimal-pwa/" target="_blank">
+        <img src="/icons/grammar.png" alt="Grammatik Icon">
+        <span>Grammatik</span>
+      </a>
 
-    <a class="hub-item" href="https://meine-granaten-tipps.de" target="_blank">
-      <img src="/icons/granaten.png" alt="Granaten & Tipps Icon">
-      <span>Granaten & Tipps</span>
-    </a>
+      <a class="hub-item" href="https://meine-granaten-tipps.de" target="_blank">
+        <img src="/icons/granaten.png" alt="Granaten & Tipps Icon">
+        <span>Granaten & Tipps</span>
+      </a>
 
-    <a class="hub-item" href="https://mein-blog.de" target="_blank">
-      <img src="/icons/blog.png" alt="Blog Icon">
-      <span>Mein Blog</span>
-    </a>
-  </div>
+      <a class="hub-item" href="https://mein-blog.de" target="_blank">
+        <img src="/icons/blog.png" alt="Blog Icon">
+        <span>Mein Blog</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Dein App Script -->
+  <script src="app.js"></script>
 </body>
 </html>
